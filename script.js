@@ -5,3 +5,7 @@ $(".btn-primary").on("click",function(){
     console.log (id,timeblock,textInput)
     localStorage.setItem(timeblock,textInput)
 })
+for(let i=8; i<18;i++){
+    var localStorageData=localStorage.getItem(i)
+    $(`#${i}-planner`).val(localStorageData)
+}
